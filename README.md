@@ -69,5 +69,5 @@ Le script à exécuter étais le suivant :
 
 Ce script introduisait les commandes suivantes :
 
-* translate permet de déplacer avec un décalage en x et y passé en argument
-* sleep provoque une mise en sommeil pour un nombre de millisecondes passé en argument
+* *translate* permet de déplacer avec un décalage en x et y passé en argument
+* *sleep* provoque une mise en sommeil pour un nombre de millisecondes passé en argument
