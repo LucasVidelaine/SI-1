@@ -16,4 +16,4 @@ La seule difficulté lors de cette première étape était la découverte du pro
 
 Le déplacement de robi devait s'adapter au redimenssionnement de la fenêtre.
 
-![Exécution de l'exercice 1](
+![Exécution de l'exercice 1](/exercice_1.gif)
