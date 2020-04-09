@@ -18,6 +18,8 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
 
 * [Exercice 4 : Sélection et exécution des commandes](#exercice-4--sélection-et-exécution-des-commandes)
 
+	* [Exercice 4.1 : Référencement des objets et enregistrement des commandes](#exercice-41--référencement-des-objets-et-enregistrement-des-commandes)
+
 ----------------
 
 # Exercice 1 : Prise en main de la couche graphique
