@@ -42,8 +42,8 @@ Le script à exécuter dans cet exercice était le suivant :
 
 ```
 (script
-(space color black)
-(robi color yellow) )
+	(space color black)
+	(robi color yellow) )
 ```
 
 Je n'ai rencontré aucune difficulté particulière lors de cet exercice.
@@ -60,15 +60,15 @@ Le script à exécuter étais le suivant :
 
 ```
 (script
-(space color white)
-(robi color red)
-(robi translate 10 0)
-(space sleep 100)
-(robi translate 0 10)
-(space sleep 100)
-(robi translate -10 0)
-(space sleep 100)
-(robi translate 0 -10) )
+	(space color white)
+	(robi color red)
+	(robi translate 10 0)
+	(space sleep 100)
+	(robi translate 0 10)
+	(space sleep 100)
+	(robi translate -10 0)
+	(space sleep 100)
+	(robi translate 0 -10) )
 ```
 
 Ce script introduisait les commandes suivantes :
@@ -94,16 +94,16 @@ Le script que j'ai exécuté est le suivant :
 
 ```
 (script
-			(space sleep 20000)
-			(space setColor yellow)
-			(robi setColor red)
-			(robi translate 10 0)
-			(space sleep 100)
-			(robi translate 0 10)
-			(space sleep 100)
-			(robi translate -10 0)
-			(space sleep 100)
-			(robi translate 0 -10) )
+	(space sleep 20000)
+	(space setColor yellow)
+	(robi setColor red)
+	(robi translate 10 0)
+	(space sleep 100)
+	(robi translate 0 10)
+	(space sleep 100)
+	(robi translate -10 0)
+	(space sleep 100)
+	(robi translate 0 -10) )
 ```
 
 ![Exécution de l'exercice 3](/exercice_3.gif)
