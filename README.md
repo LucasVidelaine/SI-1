@@ -22,7 +22,7 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
 	
 	* [Exercice 4.2 :  Ajout et suppression dynamique d’éléments graphiques](#exercice-42--ajout-et-suppression-dynamique-déléments-graphiques)
 
-	* [Exercice 4.3 : Ajouter des éléments à des conteneurs]()
+	* [Exercice 4.3 : Ajouter des éléments à des conteneurs](#exercice-43--ajouter-des-éléments-à-des-conteneurs)
 	
 	* [Exercice 4.4 : Création et exécution de scripts]()
 ----------------
