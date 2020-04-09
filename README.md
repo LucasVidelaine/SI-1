@@ -14,6 +14,8 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
   
   * [Exercice 2.2 : Script d’animation](#exercice-22--script-danimation)
 
+* [Exercice 3 : Introduction des commandes](#exercice-3--introduction-des-commandes)
+
 ----------------
 
 # Exercice 1 : Prise en main de la couche graphique
@@ -86,3 +88,4 @@ Le but de cet exercice était d'améliorer la structure du programme en mettant 
 
 Cette amélioration permet en effet de simplifier l'ajout de nouvelles commandes. En effet, avant cette amélioration, il fallait ajouter le code de chaque commande dans le même fichier, alors que maintenant, il suffit de créer une nouvelle classe Command, et d'ajouter son exécution dans l'interpreteur.
 
+![Exécution de l'exercice 3](/exercice_3.gif)
