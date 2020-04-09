@@ -22,9 +22,9 @@ La seule difficulté lors de cette première étape était la découverte du pro
 
 Le déplacement de robi devait s'adapter au redimenssionnement de la fenêtre.
 
-Le résultat de l'exécution est le suivant
+Le résultat de l'exécution est le suivant :
 
-   ![Exécution de l'exercice 1](/exercice_1.gif)
+![Exécution de l'exercice 1](/exercice_1.gif)
 
 ----------------
 
@@ -44,6 +44,6 @@ Le script à exécuter dans cet exercice était le suivant :
 
 Je n'ai rencontré aucune difficulté particulière lors de cet exercice.
 
-Le résultat est le suivant
+Le résultat de l'exécution est le suivant :
 
-   ![Exécution de l'exercice 2.1](/exercice_2_1.PNG)
+![Exécution de l'exercice 2.1](/exercice_2_1.PNG)
