@@ -10,7 +10,8 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
 
 * [Exercice 2 : Première version d’un interpréteur de script](#exercice-2--Première-version-dun-interpréteur-de-script)
 
-  * [Exercice 2.1 : Script de configuration](#exercice-21--script-de-configuration)
+  * [Exercice 2.1 : Script de configuratExercice 2.2 : Script d’animation]ion](#exercice-21--script-de-configuration)
+  * [Exercice 2.2 : Script d’animation](#exercice-22--script-danimation)
 
 ----------------
 
@@ -72,3 +73,8 @@ Ce script introduisait les commandes suivantes :
 * *translate*, qui permet de déplacer avec un décalage en x et y passé en argument
 * *sleep*, qui provoque une mise en sommeil pour un nombre de millisecondes passé en argument
 
+Là encore, je n'ai rencontré aucune difficulté particulière.
+
+Le résultat est le suivant :
+
+![Exécution de l'exercice 2.2](/exercice_2_2.gif)
