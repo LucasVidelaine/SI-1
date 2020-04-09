@@ -8,6 +8,7 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
 
 * [Exercice 1 - Prise en main de la couche graphique](#exercice-1--prise-en-main-de-la-couche-graphique)
 * [Exercice 2 : Première version d’un interpréteur de script](#exercice-2--Première-version-dun-interpréteur-de-script)
+  * [Exercice 2.1 : Script de configuration](##Exercice-2.1--Script-de-configuration)
 
 ----------------
 
@@ -24,4 +25,6 @@ Le déplacement de robi devait s'adapter au redimenssionnement de la fenêtre.
 ----------------
 
 # Exercice 2 : Première version d’un interpréteur de script
+
+  ## Exercice 2.1 : Script de configuration
 
