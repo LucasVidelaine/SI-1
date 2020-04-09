@@ -10,7 +10,7 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
 
 * [Exercice 2 : Première version d’un interpréteur de script](#exercice-2--Première-version-dun-interpréteur-de-script)
 
-  * [Exercice 2.1 : Script de configuratExercice 2.2 : Script d’animation]ion](#exercice-21--script-de-configuration)
+  * [Exercice 2.1 : Script de configuration](#exercice-21--script-de-configuration)
   * [Exercice 2.2 : Script d’animation](#exercice-22--script-danimation)
 
 ----------------
