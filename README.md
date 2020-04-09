@@ -106,4 +106,11 @@ Le script que j'ai exécuté est le suivant :
 	(robi translate 0 -10) )
 ```
 
+Le résultat est le suivant :
+
 ![Exécution de l'exercice 3](/exercice_3.gif)
+
+# Exercice 4 : Sélection et exécution des commandes
+
+## Exercice 4.1 : Référencement des objets et enregistrement des commandes
+
