@@ -7,7 +7,7 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
 --------
 
 * [Exercice 1 - Prise en main de la couche graphique](#exercice-1--prise-en-main-de-la-couche-graphique)
-* [Exercice 2 : Première version d’un interpréteur de script](exercice-2-:-Première-version-d’un-interpréteur-de-script)
+* [Exercice 2 : Première version d’un interpréteur de script](exercice-2-:-Première-version-dun-interpréteur-de-script)
 
 ----------------
 
