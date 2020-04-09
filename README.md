@@ -47,3 +47,27 @@ Je n'ai rencontré aucune difficulté particulière lors de cet exercice.
 Le résultat de l'exécution est le suivant :
 
 ![Exécution de l'exercice 2.1](/exercice_2_1.PNG)
+
+## Exercice 2.2 : Script d’animation
+
+Dans la suite de ce deuxième exercice, le script a exécuter permettais d'effectuer une petite animation
+
+Le script à exécuter étais le suivant :
+
+```
+(script
+(space color white)
+(robi color red)
+(robi translate 10 0)
+(space sleep 100)
+(robi translate 0 10)
+(space sleep 100)
+(robi translate -10 0)
+(space sleep 100)
+(robi translate 0 -10) )
+```
+
+Ce script introduisait les commandes suivantes :
+
+* translate permet de déplacer avec un décalage en x et y passé en argument
+* sleep provoque une mise en sommeil pour un nombre de millisecondes passé en argument
