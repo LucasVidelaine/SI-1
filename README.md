@@ -24,7 +24,7 @@ Le déplacement de robi devait s'adapter au redimenssionnement de la fenêtre.
 
 Le résultat de l'exécution est le suivant
 
-![Exécution de l'exercice 1](/exercice_1.gif)
+   ![Exécution de l'exercice 1](/exercice_1.gif)
 
 ----------------
 
@@ -46,4 +46,4 @@ Je n'ai rencontré aucune difficulté particulière lors de cet exercice.
 
 Le résultat est le suivant
 
-![Exécution de l'exercice 2.1](/exercice_2_1.PNG)
+   ![Exécution de l'exercice 2.1](/exercice_2_1.PNG)
