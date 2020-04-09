@@ -16,6 +16,8 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
 
 * [Exercice 3 : Introduction des commandes](#exercice-3--introduction-des-commandes)
 
+* [Exercice 4 : Sélection et exécution des commandes](#exercice-4--sélection-et-exécution-des-commandes)
+
 ----------------
 
 # Exercice 1 : Prise en main de la couche graphique
