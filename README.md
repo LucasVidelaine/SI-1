@@ -93,7 +93,7 @@ Le résultat est le suivant :
 
 # Exercice 3 : Introduction des commandes
 
-Le but de cet exercice était d'améliorer la structure du programme en mettant en place un interface fonctionnelle nommée "Command", contenant une seule méthode : la méthode abstraire run(), ainsi que des classes implémentant cette interface, représentant les différentes commandes exécutables.
+Le but de cet exercice était d'améliorer la structure du programme en mettant en place un interface fonctionnelle nommée "Command", contenant une seule méthode : la méthode abstraite run(), ainsi que des classes implémentant cette interface, représentant les différentes commandes exécutables.
 
 Cette amélioration permet en effet de simplifier l'ajout de nouvelles commandes. En effet, avant cette amélioration, il fallait ajouter le code de chaque commande dans le même fichier, alors que maintenant, il suffit de créer une nouvelle classe Command, et d'ajouter son exécution dans l'interpreteur.
 
