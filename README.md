@@ -20,7 +20,7 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
 
 	* [Exercice 4.1 : Référencement des objets et enregistrement des commandes](#exercice-41--référencement-des-objets-et-enregistrement-des-commandes)
 	
-	* [Exercice 4.2 :  Ajout et suppression dynamique d’éléments graphiques]()
+	* [Exercice 4.2 :  Ajout et suppression dynamique d’éléments graphiques](#exercice-42--ajout-et-suppression-dynamique-déléments-graphiques)
 
 	* [Exercice 4.3 : Ajouter des éléments à des conteneurs]()
 	
