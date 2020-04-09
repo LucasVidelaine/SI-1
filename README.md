@@ -20,7 +20,7 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
 
 L'objectif de cet exercice était de programmer le déplacement de carré, appelé robi, d'un bord à l'autre tout en changeant de couleur aléatoirement.
 
-La seule difficulté lors de cette première étape était la découverte du projet.
+La seule difficulté lors de cette première étape était la découverte du code existant.
 
 Le déplacement de robi devait s'adapter au redimenssionnement de la fenêtre.
 
@@ -79,3 +79,10 @@ Là encore, je n'ai rencontré aucune difficulté particulière.
 Le résultat est le suivant :
 
 ![Exécution de l'exercice 2.2](/exercice_2_2.gif)
+
+# Exercice 3 : Introduction des commandes
+
+Le but de cet exercice était d'améliorer la structure du programme en mettant en place un interface fonctionnelle nommée "Command", contenant une seule méthode : la méthode abstraire run(), ainsi que des classes implémentant cette interface, représentant les différentes commandes exécutables.
+
+Cette amélioration permet en effet de simplifier l'ajout de nouvelles commandes. En effet, avant cette amélioration, il fallait ajouter le code de chaque commande dans le même fichier, alors que maintenant, il suffit de créer une nouvelle classe Command, et d'ajouter son exécution dans l'interpreteur.
+
