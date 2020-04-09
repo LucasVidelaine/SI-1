@@ -88,4 +88,22 @@ Le but de cet exercice était d'améliorer la structure du programme en mettant 
 
 Cette amélioration permet en effet de simplifier l'ajout de nouvelles commandes. En effet, avant cette amélioration, il fallait ajouter le code de chaque commande dans le même fichier, alors que maintenant, il suffit de créer une nouvelle classe Command, et d'ajouter son exécution dans l'interpreteur.
 
+Je n'ai pas non plus rencontré de difficulté particulière lors de cet exercice.
+
+Le script que j'ai exécuté est le suivant :
+
+```
+(script
+			(space sleep 20000)
+			(space setColor yellow)
+			(robi setColor red)
+			(robi translate 10 0)
+			(space sleep 100)
+			(robi translate 0 10)
+			(space sleep 100)
+			(robi translate -10 0)
+			(space sleep 100)
+			(robi translate 0 -10) )
+```
+
 ![Exécution de l'exercice 3](/exercice_3.gif)
