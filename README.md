@@ -26,8 +26,10 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
 	
 	* [Exercice 4.4 : Création et exécution de scripts](#exercice-44--création-et-exécution-de-scripts)
 	
-		* [Exercice 4.4.1 : Les scripts]()
+		* [Exercice 4.4.1 : Les scripts](#exercice-441--les-scripts)
+		
 		* [Exercice 4.4.2 : La commande Clear]()
+		
 		* [Bonus : Lecture de gifs animés]()
 ----------------
 
