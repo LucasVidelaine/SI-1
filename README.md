@@ -185,6 +185,21 @@ Enfin, La modification de la méthode run de la classe Reference permet de tente
 
 Les principales difficultées que j'ai rencontré était de modifier les paramètres par les valeurs saisies par l'utilisateur, ainsi que d'accéder à la référence en cours à l'aide de l'interpréteur. Dans ce but, Les Références connaissent désormais leur nom et leur environnement parent.
 
+Le script exécuté est le suivant :
+
+```
+(space sleep 1000)
+(robi setColor yellow)
+(space sleep 500)
+(space setColor red)
+(space sleep 500)
+(robi translate 30 30)
+```
+
+Le résultat de l'exécution est le suivant :
+
+![Exécution de l'exercice 4.1](/exercice_4_1.gif)
+
 ### Exercice 4.4.2 : La commande Clear
 
 La commande clear a été implémentée, permettant de vider un élément de ses éléments enfants, ainsi que son environnement de ses références.
@@ -192,6 +207,16 @@ La commande clear a été implémentée, permettant de vider un élément de ses
 Une classe Clear a été ajoutée et une méthode clear a été rajoutée
 
 La difficultée ici était de parcourir le HashMap de l'environnement tout en supprimant les éléments sans provoquer de ConcurrentModificationException.
+
+Le script exécuté est le suivant :
+
+```
+
+```
+
+Le résultat de l'exécution est le suivant :
+
+![Exécution de l'exercice 4.2](/exercice_4_2.gif)
 
 ### Bonus : Lecture de gifs animés
 
