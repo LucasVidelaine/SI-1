@@ -4,6 +4,8 @@
 
 L'objectif de ce projet était de développer un interpreteur de commandes pour des éléments graphiques
 
+----------------
+
 # Table des matières
 
 * [Exercice 1 - Prise en main de la couche graphique](#exercice-1--prise-en-main-de-la-couche-graphique)
