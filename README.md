@@ -320,7 +320,7 @@ Le résultat est le suivant :
 
 ## Tests
 
-Des classes de tests dans les différents exercices ont été mises en places afin de simplifier ces derniers.
+La lecture des commandes se faisant à l'aide d'une saisie clavier dans l'exercice 4, des classes de test ont été mises en place dans cet exercice afin de rejouer automatiquement les différents scripts.
 
 # Conclusion
 
