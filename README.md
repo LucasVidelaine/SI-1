@@ -160,4 +160,4 @@ En effet, au départ, j'ajoutais toutes les références dans le même environne
 
 Désormais, les Références embarquent la possibilité de créer, de supprimer et d'exécuter des scripts.
 
-![Exécution de l'exercice gif](/exercice-gif.gif)
+![Exécution de l'exercice gif](/exercice_gif.gif)
