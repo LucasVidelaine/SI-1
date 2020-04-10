@@ -30,7 +30,7 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
 		
 		* [Exercice 4.4.2 : La commande Clear](#exercice-442--la-commande-clear)
 		
-		* [Bonus : Lecture de gifs animés]()
+		* [Bonus : Lecture de gifs animés](#exercice-442--la-commande-clear)
 ----------------
 
 # Exercice 1 : Prise en main de la couche graphique
@@ -197,3 +197,15 @@ La manière d'obtenir le lien du fichier a également été modifiée dans la cl
 Le résultat est le suivant :
 
 ![Exécution de l'exercice gif](/exercice_gif.gif)
+
+## Test
+
+Des classes de tests dans les différents exercices ont été mises en places afin de simplifier ces derniers.
+
+## Conclusion
+
+Ce projet m'a permis de mieux comprendre comment structurer un projet. En effet, l'implémentation de l'interface Command à grandement simplifier le projet.
+
+De plus, le fait que les references contiennent leur propres environnement a grandement simplifié la dernière étape de ce projet sur la partie de la suppression de scripts.
+
+En effet, quand une référence est détruite et que celle-ci possédait des références enfant, les scripts de ses enfants dispaissent avec eux.
