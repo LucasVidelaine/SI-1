@@ -302,6 +302,10 @@ Le script exécuté dans l'exercice 4.4 est le suivant :
 ( space.robi addScript addRect ( ( self name w c ) ( self add name ( Rect new ) ) ( self.name setColor c ) ( self.name setDim w w ) ) )
 (space sleep 500)
 ( space.robi addRect mySquare 30 yellow )
+(space sleep 500)
+(space.robi setDim 500 500)
+(space sleep 500)
+(space.robi.mySquare setDim 300 300)
 ```
 
 Le résultat de l'exécution est le suivant :
