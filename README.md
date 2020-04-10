@@ -28,7 +28,7 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
 	
 		* [Exercice 4.4.1 : Les scripts](#exercice-441--les-scripts)
 		
-		* [Exercice 4.4.2 : La commande Clear]()
+		* [Exercice 4.4.2 : La commande Clear](#exercice-442--la-commande-clear)
 		
 		* [Bonus : Lecture de gifs animés]()
 ----------------
