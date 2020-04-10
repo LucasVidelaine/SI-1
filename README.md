@@ -33,7 +33,7 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
 		* [Exercice 4.4.2 : La commande Clear](#exercice-442--la-commande-clear)
 		
 		* [Bonus : Lecture de gifs animés](#exercice-442--la-commande-clear)
-* [Tests](#tests)
+	* [Tests](#tests)
 
 * [Conclusion](#conclusion)
 ----------------
@@ -141,6 +141,22 @@ En effet, chaque référence possède des commandes et est située dans un envir
 
 Je n'ai pas eu de problème particulier lors de cet exercice.
 
+
+Le script exécuté est le suivant :
+
+```
+(space sleep 1000)
+(robi setColor yellow)
+(space sleep 500)
+(space setColor red)
+(space sleep 500)
+(robi translate 30 30)
+```
+
+Le résultat de l'exécution est le suivant :
+
+![Exécution de l'exercice 4.1](/exercice_4_1.gif)
+
 ## Exercice 4.2 : Ajout et suppression dynamique d’éléments graphiques
 
 Lors de cet exercice, les commades AddElement et DelElement ont été implémentées, permettant d'ajouter et de supprimer des rectangles, des cercles, des images et des labels dans l'environnement pricipal.
@@ -148,6 +164,38 @@ Lors de cet exercice, les commades AddElement et DelElement ont été implément
 Ceux-ci peuvent être manipulé de la même manière que le carré robi, précédemment présent dans l'environnement.
 
 J'ai rencontré des problèmes de compréhensions lors de cet exercice. Notamment de la commande AddElement et des classes NewElement, NewImage et NewString.
+
+Le script exécuté est le suivant :
+
+```
+(space sleep 1000)
+(space setDim 1000 1000)
+(space sleep 500)
+(space add robi (Rect new))
+(space sleep 500)
+(robi translate 100 100)
+(space sleep 500)
+(space add momo (Oval new))
+(space sleep 500)
+(momo setColor green)
+(space sleep 500)
+(momo translate 150 150)
+(space sleep 500)
+(space add hello (Label new "Hello World"))
+(space sleep 500)
+(hello setColor black)
+(space sleep 500)
+(hello translate 200 0)
+(space sleep 500)
+(space add pif (Image new bear.jpg))
+(space sleep 500)
+(pif translate 0 500)
+
+```
+
+Le résultat de l'exécution est le suivant :
+
+![Exécution de l'exercice 4.2](/exercice_4_2.gif)
 
 ## Exercice 4.3 : Ajouter des éléments à des conteneurs
 
@@ -167,6 +215,40 @@ J'ai rencontré des problèmes au niveau de la gestion des environnement.
 
 En effet, au départ, j'ajoutais toutes les références dans le même environnement avec la notation pointée pour nommage et pour la commande DelElement, je supprimais la référence en utilisant la méthode removeIf de la classe Map.
 
+
+Le script exécuté est le suivant :
+
+```
+(space sleep 1000)
+(space setDim 1000 1000)
+(space sleep 500)
+(space add robi (Rect new))
+(space sleep 500)
+(space.robi setDim 800 800)
+(space sleep 500)
+(space.robi setColor red)
+(space sleep 500)
+(space.robi add robi (Rect new))
+(space sleep 500)
+(space.robi.robi setDim 700 700)
+(space sleep 500)
+(space.robi.robi add img (Image new trex.jpg))
+(space sleep 500)
+(space.robi.robi.img translate 50 50)
+(space sleep 500)
+(space.robi del robi)
+(space sleep 500)
+(space.robi add robi (Oval new))
+(space sleep 500)
+(space.robi.robi setColor yellow)
+(space sleep 500)
+(space.robi.robi setDim 300 300)
+```
+
+Le résultat de l'exécution est le suivant :
+
+![Exécution de l'exercice 4.3](/exercice_4_3.gif)
+
 ## Exercice 4.4 : Création et exécution de scripts
 
 ### Exercice 4.4.1 : Les scripts
@@ -185,21 +267,6 @@ Enfin, La modification de la méthode run de la classe Reference permet de tente
 
 Les principales difficultées que j'ai rencontré était de modifier les paramètres par les valeurs saisies par l'utilisateur, ainsi que d'accéder à la référence en cours à l'aide de l'interpréteur. Dans ce but, Les Références connaissent désormais leur nom et leur environnement parent.
 
-Le script exécuté est le suivant :
-
-```
-(space sleep 1000)
-(robi setColor yellow)
-(space sleep 500)
-(space setColor red)
-(space sleep 500)
-(robi translate 30 30)
-```
-
-Le résultat de l'exécution est le suivant :
-
-![Exécution de l'exercice 4.1](/exercice_4_1.gif)
-
 ### Exercice 4.4.2 : La commande Clear
 
 La commande clear a été implémentée, permettant de vider un élément de ses éléments enfants, ainsi que son environnement de ses références.
@@ -208,15 +275,39 @@ Une classe Clear a été ajoutée et une méthode clear a été rajoutée
 
 La difficultée ici était de parcourir le HashMap de l'environnement tout en supprimant les éléments sans provoquer de ConcurrentModificationException.
 
-Le script exécuté est le suivant :
+Le script exécuté dans l'exercice 4.4 est le suivant :
 
 ```
-
+(space sleep 1000)
+(space setDim 1000 1000)
+(space sleep 500)
+( space addScript empty ( ( self ) ( self clear ) ) )
+(space sleep 500)
+(space add robi (Rect new))
+(space sleep 500)
+(space add gif (Image new nyan_cat.gif))
+(space sleep 500)
+(space.gif translate 100 100)
+(space sleep 500)
+(space empty)
+(space sleep 500)
+( space addScript addImage ( ( self filename ) (self add im ( Image new filename ) ) ) )
+(space sleep 500)
+( space addImage nyan_cat.gif) )
+(space sleep 500)
+(space clear)
+(space sleep 500)
+( space add robi (Rect new ) )
+(space sleep 500)
+( space.robi addScript addRect ( ( self name w c ) ( self add name ( Rect new ) ) ( self.name setColor c ) ( self.name setDim w w ) ) )
+Le script addRect a bien été ajouté
+(space sleep 500)
+( space.robi addRect mySquare 30 yellow )
 ```
 
 Le résultat de l'exécution est le suivant :
 
-![Exécution de l'exercice 4.2](/exercice_4_2.gif)
+![Exécution de l'exercice 4.4](/exercice_4_4.gif)
 
 ### Bonus : Lecture de gifs animés
 
@@ -228,7 +319,7 @@ Le résultat est le suivant :
 
 ![Exécution de l'exercice gif](/exercice_gif.gif)
 
-# Tests
+## Tests
 
 Des classes de tests dans les différents exercices ont été mises en places afin de simplifier ces derniers.
 
