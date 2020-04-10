@@ -282,7 +282,6 @@ Le script exécuté dans l'exercice 4.4 est le suivant :
 (space setDim 1000 1000)
 (space sleep 500)
 ( space addScript empty ( ( self ) ( self clear ) ) )
-Le script empty a bien été ajouté
 (space sleep 500)
 (space add robi (Rect new))
 (space sleep 500)
@@ -293,7 +292,6 @@ Le script empty a bien été ajouté
 (space empty)
 (space sleep 500)
 ( space addScript addImage ( ( self filename ) (self add im ( Image new filename ) ) ) )
-Le script addImage a bien été ajouté
 (space sleep 500)
 ( space addImage nyan_cat.gif) )
 (space sleep 500)
@@ -302,7 +300,6 @@ Le script addImage a bien été ajouté
 ( space add robi (Rect new ) )
 (space sleep 500)
 ( space.robi addScript addRect ( ( self name w c ) ( self add name ( Rect new ) ) ( self.name setColor c ) ( self.name setDim w w ) ) )
-Le script addRect a bien été ajouté
 (space sleep 500)
 ( space.robi addRect mySquare 30 yellow )
 (space sleep 500)
