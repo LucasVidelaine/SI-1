@@ -142,7 +142,6 @@ J'ai rencontré des problèmes de compréhensions lors de cet exercice. Notammen
 
 Cet exercice a permis d'ajouter des éléments graphiques à l'intérieur d'autres éléments graphiques.
 
-
 Cette possibilité a cependant été enlevée des ovals en raison de problème de conteneur graphique (les éléments sortaient du cercle).
 
 La solution choisie pour mettre en place cette possibilité est l'ajout d'un environnement dans la référence de l'élément parent afin de contenir les éléments enfant.
@@ -158,4 +157,6 @@ J'ai rencontré des problèmes au niveau de la gestion des environnement.
 En effet, au départ, j'ajoutais toutes les références dans le même environnement avec la notation pointée pour nommage et pour la commande DelElement, je supprimais la référence en utilisant la méthode removeIf de la classe Map.
 
 ## Exercice 4.4 : Création et exécution de scripts
+
+Désormais, les Références embarquent la possibilité de créer, de supprimer et d'exécuter des scripts.
 
