@@ -87,7 +87,7 @@ Ce script introduisait les commandes suivantes :
 
 Là encore, je n'ai rencontré aucune difficulté particulière.
 
-Le résultat est le suivant :
+Le résultat de l'exécution est le suivant :
 
 ![Exécution de l'exercice 2.2](/exercice_2_2.gif)
 
@@ -103,7 +103,6 @@ Le script que j'ai exécuté est le suivant :
 
 ```
 (script
-	(space sleep 20000)
 	(space setColor yellow)
 	(robi setColor red)
 	(robi translate 10 0)
@@ -115,7 +114,7 @@ Le script que j'ai exécuté est le suivant :
 	(robi translate 0 -10) )
 ```
 
-Le résultat est le suivant :
+Le résultat de l'exécution est le suivant :
 
 ![Exécution de l'exercice 3](/exercice_3.gif)
 
@@ -123,8 +122,40 @@ Le résultat est le suivant :
 
 ## Exercice 4.1 : Référencement des objets et enregistrement des commandes
 
+Dans cet exercice, la structure du projet c'est encore améliorée avec l'implémentation des classes Reference et Environment.
+
+Ces classes permettent d'ajouter de nouvelles commandes encore plus facilement qu'avant.
+
+En effet, chaque référence possède des commandes et est située dans un environnement, permettant de lui attribuer des commandes facilement.
+
+Je n'ai pas eu de problème particulier lors de cet exercice.
+
 ## Exercice 4.2 : Ajout et suppression dynamique d’éléments graphiques
+
+Lors de cet exercice, les commades AddElement et DelElement ont été implémentées, permettant d'ajouter et de supprimer des rectangles, des cercles, des images et des labels dans l'environnement pricipal.
+
+Ceux-ci peuvent être manipulé de la même manière que le carré robi, précédemment présent dans l'environnement.
+
+J'ai rencontré des problèmes de compréhensions lors de cet exercice. Notamment de la commande AddElement et des classes NewElement, NewImage et NewString.
 
 ## Exercice 4.3 : Ajouter des éléments à des conteneurs
 
+Cet exercice a permis d'ajouter des éléments graphiques à l'intérieur d'autres éléments graphiques.
+
+
+Cette possibilité a cependant été enlevée des ovals en raison de problème de conteneur graphique (les éléments sortaient du cercle).
+
+La solution choisie pour mettre en place cette possibilité est l'ajout d'un environnement dans la référence de l'élément parent afin de contenir les éléments enfant.
+
+Lors de la création d'un élément, on lui attribut un nouvel environnement enfant.
+
+Désormais, la référence space est contenu dans un environnement, permettant de l'appeler et contient elle-même un environnement permettant d'y disposer les éléments.
+
+Enfin, lors de l'appel à l'interpréteur, celui-ci utilise la notation pointée, en partant de l'environnement passé en paramètre pour accéder au dernier environnement désigné.
+
+J'ai rencontré des problèmes au niveau de la gestion des environnement.
+
+En effet, au départ, j'ajoutais toutes les références dans le même environnement avec la notation pointée pour nommage et pour la commande DelElement, je supprimais la référence en utilisant la méthode removeIf de la classe Map.
+
 ## Exercice 4.4 : Création et exécution de scripts
+
