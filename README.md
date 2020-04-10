@@ -25,6 +25,10 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
 	* [Exercice 4.3 : Ajouter des éléments à des conteneurs](#exercice-43--ajouter-des-éléments-à-des-conteneurs)
 	
 	* [Exercice 4.4 : Création et exécution de scripts](#exercice-44--création-et-exécution-de-scripts)
+	
+		* [Exercice 4.4.1 : Les scripts]()
+		* [Exercice 4.4.2 : La commande Clear]()
+		* [Bonus : Lecture de gifs animés]()
 ----------------
 
 # Exercice 1 : Prise en main de la couche graphique
@@ -158,6 +162,36 @@ En effet, au départ, j'ajoutais toutes les références dans le même environne
 
 ## Exercice 4.4 : Création et exécution de scripts
 
+### Exercice 4.4.1 : Les scripts
+
 Désormais, les Références embarquent la possibilité de créer, de supprimer et d'exécuter des scripts.
+
+Afin de mettre en place ces possibilitées, les classes AddScript, DelScript et RunScript ont été ajoutées, un HashMap de commande a été ajoutée dans la classe Reference et le méthode run a été modifiée.
+
+La méthode AddScript rajoute une commande RunScript, possédant une ExprList en attribut de classe, représentant le script avc ses paramètres.
+
+La méthode DelScript supprime simplement le script du HashMap de script de la Reference. C'est là tout l'intérêt de ce HashMap : cela évite de donner la possibilitée à l'utilisateur de supprimer des commandes primitives.
+
+La méthode RunScript modifie les paramètres par les valeurs saisies par l'utilisateur, pui exécute les expressions une par une.
+
+Enfin, La modification de la méthode run de la classe Reference permet de tenter d'exécuter un script si aucune commande n'a primitive ne correspond au nom de commande saisie par l'utilisateur.
+
+Les principales difficultées que j'ai rencontré était de modifier les paramètres par les valeurs saisies par l'utilisateur, ainsi que d'accéder à la référence en cours à l'aide de l'interpréteur. Dans ce but, Les Références connaissent désormais leur nom et leur environnement parent.
+
+### Exercice 4.4.2 : La commande Clear
+
+La commande clear a été implémentée, permettant de vider un élément de ses éléments enfants, ainsi que son environnement de ses références.
+
+Une classe Clear a été ajoutée et une méthode clear a été rajoutée
+
+La difficultée ici était de parcourir le HashMap de l'environnement tout en supprimant les éléments sans provoquer de ConcurrentModificationException.
+
+### Bonus : Lecture de gifs animés
+
+Désormais, les images au format .gif sont animées. Dans ce but, la classe GImage implémente désormais l'interface ImageObserver, permettant de passer cette classe en paramètre de la méthode drawImage de Graphics2D, et redéfinie la méthode imageUpdate de cette interface, permettant de détecter une mise à jour de cette image à l'aide d'un thread et la repeint donc à chaque mise à jour.
+
+La manière d'obtenir le lien du fichier a également été modifiée dans la classe NewImage. En effet, il semble qu'avec la méthode read de la classe ImageIO, cela ne fonctionne pas. Je n'ai cependant pas trouvé plus d'explication à ce sujet.
+
+Le résultat est le suivant :
 
 ![Exécution de l'exercice gif](/exercice_gif.gif)
