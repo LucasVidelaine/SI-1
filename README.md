@@ -32,7 +32,7 @@ L'objectif de ce projet était de développer un interpreteur de commandes pour 
 		
 		* [Exercice 4.4.2 : La commande Clear](#exercice-442--la-commande-clear)
 		
-		* [Bonus : Lecture de gifs animés](#exercice-442--la-commande-clear)
+		* [Bonus : Lecture de gifs animés](#bonus--lecture-de-gifs-animés)
 	* [Tests](#tests)
 
 * [Conclusion](#conclusion)
